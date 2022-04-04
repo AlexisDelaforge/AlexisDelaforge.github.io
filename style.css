@@ -148,3 +148,23 @@
         fill-opacity:0.5
     }
 }
+
+@font-face {
+    font-family:'Patrick Hand';
+    src: url('/fonts/PatrickHand-Regular.ttf');
+}
+
+@font-face {
+    font-family:'Product Sans Black';
+    src: url('/fonts/ProductSans-Black.ttf');
+}
+
+@font-face {
+    font-family:'Product Sans Thin';
+    src: url('/fonts/ProductSans-Thin.ttf');
+}
+
+@font-face {
+    font-family:'Product Sans Regular';
+    src: url('/fonts/ProductSans-Thin.ttf');
+}
