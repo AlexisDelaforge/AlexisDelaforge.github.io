@@ -1,0 +1,150 @@
+.event {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+}
+
+.event.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
+}
+
+#all-page {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+}
+
+#all-page.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
+}
+
+#g1346.hide { /* LOADING BOARD */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+}
+
+.hover-event-future{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+}
+
+.hover-event-future.show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
+}
+
+#g_google {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
+}
+
+#g_google.fade {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+}
+
+.squiggle {
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#rect191106-5{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+} /* livre bleu */
+
+.rect191106-5:hover {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+} /* livre bleu rotation */
+
+.pen-cap{
+    animation: pen_cap 1.5s infinite linear alternate;
+}  /* bouchons des feutres */
+
+/* explosion container (NOT ME) */
+.explosion {
+    position: absolute; /* required if positioned on click else 'relative' */
+    width: 600px;
+    height: 600px;
+    pointer-events: none; /* make it clickable through */
+    /*particle styling (NOT ME) */
+}
+.particle {
+   position: absolute; /* required */
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   animation: pop 1s reverse forwards; /* required */
+}
+
+.path-animate {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash .3s linear forwards;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* animation for particle fly away from the cursor (NOT ME) */
+
+@keyframes pop {
+    from {
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes google_hat_spinning {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to
+    {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes pen_cap
+{
+    from {
+        fill-opacity:1
+    }
+
+    to {
+        fill-opacity:0.5
+    }
+}
