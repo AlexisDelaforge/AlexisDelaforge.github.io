@@ -1,16 +1,17 @@
 let events = {
-    // 'birth':{
-    //     'hover':'g27760',
-    //     'target':'g22185',
-    //     'soft':{},
-    //     'hard':{}
-    // },
-    // 'schools_1':{'hover':'g7166',
-    //     'target':'g22185',
-    //     'soft':{},
-    //     'hard':{},
-    //         'type':'education'
-    //         },
+    'birth':{
+        'hover':'g7175',
+        'target':'g8675',
+        'soft':{},
+        'hard':{}
+    },
+    'schools_1':{
+        'hover':'g7171',
+        'target':'g8592',
+        'soft':{},
+        'hard':{},
+        'type':'education'
+    },
     'moving_south':{
         'hover':'g7166',
         'target':'g22185',
@@ -95,9 +96,27 @@ let events = {
         'type':'personal',
         'seen':false
     },
-    // 'papers_2':{},
-    // 'papers_3':{},
-    // 'schools_5':{},
+    'papers_2':{
+        'hover':'g4388',
+        'target':'g7936',
+        'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
+        'type':'education',
+        'seen':false
+    },
+    'papers_3':{
+        'hover':'g4388',
+        'target':'g7233',
+        'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
+        'type':'education',
+        'seen':false
+    },
+    'schools_5':{
+        'hover':'g4380',
+        'target':'g8280',
+        'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
+        'type':'education',
+        'seen':false
+    },
 }
 
 let future_events = {
