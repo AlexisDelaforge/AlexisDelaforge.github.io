@@ -2,14 +2,12 @@ let events = {
     'birth':{
         'hover':'g7175',
         'target':'g8675',
-        'soft':{},
-        'hard':{}
+        'skills':[],
     },
     'schools_1':{
         'hover':'g7171',
         'target':'g8592',
-        'soft':{},
-        'hard':{},
+        'skills':[],
         'type':'education'
     },
     'moving_south':{
@@ -244,6 +242,8 @@ function prepareDisplay(){
     document.getElementById('text66023').style.visibility = 'hidden'
     document.getElementById('g82293').style.visibility = 'hidden' // PYTHON COUNT OF SECRETS
     for (const [label, event] of Object.entries(events)) {
+        console.log(event.target)
+        console.log(document.getElementById(event.target))
         document.getElementById(event.target).classList.add('event')
     }
     for (const [label, event] of Object.entries(future_events)) {
