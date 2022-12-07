@@ -102,7 +102,7 @@ let events = {
         'seen':false
     },
     'papers_3':{
-        'hover':'g4388',
+        'hover':'g4384',
         'target':'g7233',
         'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
         'type':'education',
