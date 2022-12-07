@@ -99,19 +99,21 @@ let events = {
         'target':'g7936',
         'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
         'type':'education',
-        'seen':false
+        'seen':false,
+        'onclick':function (){window.open('https://ieeexplore.ieee.org/document/9801527', '_blank').focus();}
     },
     'papers_3':{
         'hover':'g4384',
         'target':'g7233',
         'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
         'type':'education',
-        'seen':false
+        'seen':false,
+        'onclick':function (){window.open('https://drive.google.com/file/d/1WQxfW65TCN0_S9449-JzYcj2Ymg6Gu7f/view?usp=share_link', '_blank').focus();}
     },
     'schools_5':{
         'hover':'g4380',
         'target':'g8280',
-        'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch'],
+        'skills':['pb_solving', 'autonomy', 'teamwork', 'creativity', 'self_motivation', 'statistics', 'deep_learning', 'machine_learning', 'data_mining', 'data_visualisation', 'js', 'html', 'css', 'python', 'nlp', 'xai', 'pytorch', 'adaptability', 'php', 'initiative', 'sql'],
         'type':'education',
         'seen':false
     },
@@ -127,7 +129,7 @@ let future_events = {
     },
     'find_job':{
         'hover':'g2458',
-        'target':'g111009',
+        'target':'g75516',
         'skills':[],
         'type':'personal',
         'seen':false
@@ -241,11 +243,18 @@ function prepareDisplay(){
     document.getElementById("rect45284").remove(); // USE FOR POSITION OF EVENTS
     document.getElementById('text66023').style.visibility = 'hidden'
     document.getElementById('g82293').style.visibility = 'hidden' // PYTHON COUNT OF SECRETS
+    document.getElementById("tspan72905-7").onclick = function (){window.open('https://www.linkedin.com/in/alexis-delaforge/', '_blank').focus();}
     for (const [label, event] of Object.entries(events)) {
-        console.log(event.target)
-        console.log(document.getElementById(event.target))
+        // console.log(event.target)
+        // console.log(document.getElementById(event.target))
         document.getElementById(event.target).classList.add('event')
+        if(event.onclick !== undefined){
+            document.getElementById(event.hover).onclick = event.onclick
+        }
+        document.getElementById(event.hover).style.cursor = "pointer";
     }
+    document.getElementById("g8775").onclick = function (){window.open('https://www.linkedin.com/in/alexis-delaforge/', '_blank').focus();}
+    document.getElementById("g8775").style.cursor = "pointer";
     for (const [label, event] of Object.entries(future_events)) {
         document.getElementById(event.target).classList.add('event')
     }
@@ -315,7 +324,7 @@ function allSeen(){
 
 function foundSecret(label, e){
     if(!found_secrets.includes(label)){
-        if(label != 'all_seen'){
+        if(label != 'all_seen' && label != 'mail_to'){
             explode(e.pageX, e.pageY, 10);
         }
         found_secrets.push(label);
@@ -332,7 +341,8 @@ function foundSecret(label, e){
         }
     }
     if(found_secrets.length == 5){
-        alert('all secrets') // ALL SECRETS FOUND, DO SOMETHING.
+        // alert('all secrets') // ALL SECRETS FOUND, DO SOMETHING.
+        document.getElementById('text71622').innerHTML = found_secrets.length
     }else if(found_secrets.length == 1){
         document.getElementById('g82293').style.visibility = 'visible'
         document.getElementById('text71622').innerHTML = 1
@@ -455,6 +465,11 @@ function animateEvents(){
     document.getElementById('g_google').addEventListener('click', e => {
         document.getElementById('g_google').style.opacity = 0;
         foundSecret('google', e)
+        // DISPLAY TEXT ABOUT THE THESIS AND PROVIDED LINK TO IT.
+    })
+    document.getElementById('mail_to').addEventListener('click', e => {
+        // document.getElementById('g_google').style.opacity = 0;
+        foundSecret('mail_to', e)
         // DISPLAY TEXT ABOUT THE THESIS AND PROVIDED LINK TO IT.
     })
 }
