@@ -324,7 +324,7 @@ function allSeen(){
 
 function foundSecret(label, e){
     if(!found_secrets.includes(label)){
-        if(label != 'all_seen' && label != 'mail_to'){
+        if(label != 'all_seen'){
             explode(e.pageX, e.pageY, 10);
         }
         found_secrets.push(label);
