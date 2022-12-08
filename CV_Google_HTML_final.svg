@@ -49,7 +49,7 @@
      inkscape:snap-object-midpoints="false"
      inkscape:zoom="0.45254835"
      inkscape:cx="467.35338"
-     inkscape:cy="277.31844"
+     inkscape:cy="279.52814"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
      inkscape:window-x="72"
@@ -1221,6 +1221,11 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(69.835424,-30.309369)">
+    <path
+       id="rect5697"
+       style="fill:#ffffff;stroke-width:0.49999899;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:5.66929007"
+       d="m -40.088675,40.236634 281.474925,2e-6 V 244.23038 H -40.088675 Z"
+       inkscape:connector-curvature="0" />
     <g
        id="g25756"
        transform="translate(164.03833,-4.7816592)">
@@ -1793,11 +1798,6 @@
            inkscape:connector-curvature="0" />
       </g>
     </g>
-    <path
-       id="rect5697"
-       style="fill:#ffffff;stroke-width:0.49999899;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:5.66929007"
-       d="m -40.088675,40.236634 281.474925,2e-6 V 244.23038 H -40.088675 Z"
-       inkscape:connector-curvature="0" />
     <g
        id="g109216"
        transform="translate(239.98026,-44.21734)">
@@ -4767,7 +4767,7 @@
            width="38.163383"
            height="51.269028"
            preserveAspectRatio="none"
-           href="./pilou.png"
+           href="./uncle_sam.png"
            id="image75211"
            x="94.388237"
            y="-390.04721"
@@ -7592,8 +7592,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g1346"
-       transform="translate(0,-249.06434)">
+       id="g1346">
       <path
          id="path5369"
          style="fill:#ffffff;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:5.66929"
