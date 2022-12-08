@@ -47,9 +47,9 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-midpoints="true"
      inkscape:snap-object-midpoints="false"
-     inkscape:zoom="0.64000001"
-     inkscape:cx="546.09374"
-     inkscape:cy="410.15625"
+     inkscape:zoom="0.45254835"
+     inkscape:cx="467.35338"
+     inkscape:cy="277.31844"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
      inkscape:window-x="72"
@@ -4767,11 +4767,12 @@
            width="38.163383"
            height="51.269028"
            preserveAspectRatio="none"
-           href="./uncle_sam.jpg"
+           href="./pilou.png"
            id="image75211"
            x="94.388237"
            y="-390.04721"
-           />
+           clip-path="url(#clipPath221196-3)"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:52.9167px;line-height:1.25;font-family:'Product Sans Black';-inkscape-font-specification:'Product Sans Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.96155" />
         <path
            inkscape:connector-curvature="0"
            id="path75229"
@@ -7591,7 +7592,8 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g1346">
+       id="g1346"
+       transform="translate(0,-249.06434)">
       <path
          id="path5369"
          style="fill:#ffffff;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:5.66929"
