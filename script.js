@@ -253,7 +253,7 @@ function prepareDisplay(){
         }
         document.getElementById(event.hover).style.cursor = "pointer";
     }
-    document.getElementById("g8775").onclick = function (){window.open('https://www.linkedin.com/in/alexis-delaforge/', '_blank').focus();}
+    document.getElementById("g8775").onclick = function (){window.open('https://www.linkedin.com/in/alexis-delaforge/?locale=en_US', '_blank').focus();}
     document.getElementById("g8775").style.cursor = "pointer";
     for (const [label, event] of Object.entries(future_events)) {
         document.getElementById(event.target).classList.add('event')
