@@ -48,7 +48,7 @@ let events = {
     'schools_3':{
         'hover':'g4425',
         'target':'g25901',
-        'skills':['statistics', 'python', 'css', 'html', 'js', 'data_mining'],
+        'skills':['statistics',  'adaptability', 'self_motivation', 'initiative', 'autonomy', 'python', 'css', 'html', 'js', 'data_mining'],
         'type':'education',
         'seen':false
     },
